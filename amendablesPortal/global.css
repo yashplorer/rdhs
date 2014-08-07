@@ -1,46 +1,6 @@
-#wrapper {
-	background: url(bg.png) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
-#amendTitle{
-	width: 800px;
-}
-
-#center{
-	margin-left: auto;
-    margin-right: auto;
-    width: 800px;
-}
-
-#amendForm{
+* {
+	color: white;
 	font-family: 'Quicksand', sans-serif;
-	color: white;
-	width: 400px;
-}
-
-.amendInput{
-	background-color: rgba(255, 255, 255, .2);
-	color: white;
-	width: 350px;
-	height: 30px;
-	padding: 0px 15px;
-	border: none;
-	-webkit-border-radius: 10px 10px 10px 10px;
-	border-radius: 10px 10px 10px 10px;
-	-webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	-ms-transition: all .5s ease;
-	-o-transition: all .5s ease;
-	transition: all .5s ease;
-}
-
-.amendInput:focus{
-	outline: 0;
-	background-color: rgba(255, 255, 255, .5);
 }
 
 ::-webkit-input-placeholder {
@@ -56,9 +16,28 @@
 	color: white;
 }
 
+.amendInput {
+	background-color: rgba(255, 255, 255, .2);
+	width: 350px;
+	height: 30px;
+	padding: 0px 15px;
+	border: none;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+.amendInput:focus {
+	outline: 0;
+	background-color: rgba(255, 255, 255, .5);
+}
+
 .amendTA {
 	background-color: rgba(255, 255, 255, .2);
-	color: white;
 	width: 350px;
 	padding: 15px  15px;
 	border: none;
@@ -73,12 +52,12 @@
 	transition: all .5s ease;
 }
 
-.amendTA:focus{
+.amendTA:focus {
 	outline: 0;
 	background-color: rgba(255, 255, 255, .5);
 }
 
-#amendSubmit {
+.amendSubmit {
 	border: solid rgba(255,255,255,.5) 2px;
 	color: rgba(255,255,255,.5);
 	-webkit-border-radius: 5px 5px 5px 5px;
@@ -92,27 +71,69 @@
 	transition: all .5s ease;
 }
 
-#amendSubmit:hover,
-#amendSubmit:active,
-#amendSubmit:focus {
+.amendSubmit:hover,
+.amendSubmit:active,
+.amendSubmit:focus {
 	border: solid rgba(255,255,255,1) 2px;
 	color: rgba(255,255,255,1);
 	outline: 0;
 }
 
-#vertLine{
+.rCElement {
+	margin: 15px;
+	padding: 15px;
+	border: thin dotted white;
+}
+
+#wrapper {
+	background: url(bg.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#amendTitle {
+	width: 800px;
+}
+
+#center {
+	margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+#amendForm {
+
+	color: white;
+	width: 400px;
+}
+
+#vertLine {
 	border-left: thin solid #fff;
-	height: 49vh;
-	top: 0px;
+	height: 2200px;
+	top: 120px;
 	left: 50%;
 	position: absolute;
 }
 
-#rightColumn{
+#rC {
 	width: 400px;
 	border: thin dotted white;
 	left: 52%;
-	height: 720px;
+	height: 2200px;
 	position: absolute;
 	top: 120px;
+}
+
+#map {
+	height: 150px;
+}
+
+#bullList {
+	height: 250px;
+}
+
+#graphBuilder {
+	height: 300px;
 }

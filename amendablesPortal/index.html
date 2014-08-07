@@ -20,10 +20,9 @@
 					class="amendInput"
 					placeholder="School"
 					spellcheck='false'
-				><br>
-				
+				>
 				<br>
-				
+				<br>
 				<textarea
 					type="text"
 					id="thesis"
@@ -31,12 +30,11 @@
 					class="amendTA"
 					maxlength="150"
 					rows="4"
-					placeholder='Purpose, thesis, under 150 characters:'
+					placeholder='Purpose, thesis, under 150 characters'
 				></textarea>
-				Assure inclusion of issue and proposed solution.<br>
-				
+				Assure inclusion of issue and proposed solution.
 				<br>
-
+				<br>
 				<br>
 				<textarea 
 					type="text"
@@ -44,12 +42,10 @@
 					name="probDetail"
 					class="amendTA"
 					rows="12"
-					placeholder='Detail the problem:'
+					placeholder='Detail the problem'
 				></textarea>
 				<br>
-
 				<br>
-
 				<br>
 				<textarea 
 					type="text"
@@ -57,12 +53,10 @@
 					name="probSupp"
 					class="amendTA"
 					rows="15" 
-					placeholder='Support the problem:'
+					placeholder='Support the problem'
 				></textarea>
 				<br>
-
 				<br>
-
 				<br>
 				<textarea 
 					type="text"
@@ -70,12 +64,10 @@
 					name="counter"
 					class="amendTA"
 					rows="7" 
-					placeholder='Brief counter argument:'
+					placeholder='Brief counter argument'
 				></textarea>
 				<br>
-
 				<br>
-
 				<br>
 				<textarea 
 					type="text"
@@ -83,12 +75,10 @@
 					name="solutDetail"
 					class="amendTA"
 					rows="12"
-					placeholder='Detail the solution:'
+					placeholder='Detail the solution'
 				></textarea>
 				<br>
-
 				<br>
-
 				<br>
 				<textarea 
 					type="text"
@@ -96,12 +86,10 @@
 					name="solutSupp"
 					class="amendTA"
 					rows="15"
-					placeholder='Support the solution:'
+					placeholder='Support the solution'
 				></textarea>
 				<br>
-
 				<br>
-
 				<br>
 				<textarea 
 					type="text"
@@ -109,12 +97,10 @@
 					name="solutAlt"
 					class="amendTA"
 					rows="7"
-					placeholder='Briefly discuss an alternative solution:'
+					placeholder='Briefly discuss an alternative solution'
 				></textarea>
 				<br>
-
 				<br>
-
 				<br>
 				<textarea 
 					type="text"
@@ -122,12 +108,10 @@
 					name="testimontals"
 					class="amendTA"
 					rows="12"
-					placeholder='Quote support from teachers and students:'
+					placeholder='Quote support from teachers and students'
 				></textarea>
 				<br>
-
 				<br>
-
 				<br>
 				<textarea 
 					type="text"
@@ -135,35 +119,26 @@
 					name="probDetail"
 					class="amendTA"
 					rows="7"
-					placeholder='Repeat solution and problem to conclude:'
+					placeholder='Repeat solution and problem to conclude'
 				></textarea><br>
 				<br>
 				<input
 					type="submit"
 					value="Submit"
-					id='amendSubmit'
+					class='amendSubmit'
 				>
-				<br><br>
+				<br>
+				<br>
 			</form>
 			<div id="vertLine"></div>
-			<div id="rightColumn"></div>
+			<div id="rC">
+				<div class="rCElement" id="map">Map</div>
+				<div class="rCElement" id="bullList">Outline the circumstances.</div>
+				<div class="rCElement" id="graphBuilder">Graph evidence.</div>
+				<div class="rCElement" id="bullList">Breakdown your solution.</div>
+				<div class="rCElement" id="graphBuilder">Graph evidence.</div>
+			</div>
 		</div>
 	</div>
-	<script type="text/javascript">
-		window.onLoad = onLoad();
-		function onLoad() {
-			$(document).ready()
-			var titleHeight = $("#amendTitle").height();
-			var formHeight = $("#amendForm").height();
-			var formWidth = $("#amendForm").width();
-			$("#vertLine").css({
-				"top": titleHeight + 30 + 'px',
-				"height": formHeight - 50 + 'px'
-			});
-			$("#rightColumn").css({
-				"width": formWidth + 'px',
-				"height": formHeight - 70 + 'px'
-			});
-		}
-	</script>
+	<script type="text/javascript" src='script.js'></script>
 </body>
