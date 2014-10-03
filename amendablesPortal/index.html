@@ -4,14 +4,25 @@
  	<title>Amendable Panel</title>
  	<link rel="stylesheet" type="text/css" href="normalize.css">
  	<link rel="stylesheet" type="text/css" href="global.css">
- 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
-	</script>
+ 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ 	<script src="http://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
  </head>
 <body>
 	<div id="wrapper">
 		<div id="center">
 			<img src="title.png" id="amendTitle">
 			<form id="amendForm">
+				<br>
+				<input 
+					type="text"
+					id="title"
+					name="title"
+					class="amendInput"
+					placeholder="Title of Reform"
+					spellcheck='false'
+				>
+				Don't include school name!
+				<br>
 				<br>
 				<input 
 					type="text"
@@ -115,21 +126,25 @@
 				<br>
 				<textarea 
 					type="text"
-					id="probDetail"
-					name="probDetail"
+					id="probSolutDetail"
+					name="probSolutDetail"
 					class="amendTA"
 					rows="7"
 					placeholder='Repeat solution and problem to conclude'
-				></textarea><br>
+				></textarea>
 				<br>
-				<input
+				<br>
+				<!-- <input
 					type="submit"
 					value="Submit"
 					class='amendSubmit'
 				>
 				<br>
-				<br>
+				<br>-->
 			</form>
+			<button class='amendSubmit' onclick="save()">Save</button>
+			<br>
+			<br>
 			<div id="vertLine"></div>
 			<div id="rC">
 				<div class="rCElement" id="map">Map</div>

@@ -12,4 +12,37 @@ function onLoad() {
 		"width": formWidth + 'px',
 		"height": formHeight - 70 + 'px'
 	});
+	Parse.initialize("QyD6gU9ea2bFczMYlbyZ0Lu4imllLAyldZVQB5H4", "rUvsYvxZuyD9Kf6m3bHSuh6fVlpVvgEOibXhsbzn");
+	var TestObject = Parse.Object.extend("TestObject");
+	var testObject = new TestObject();
+	testObject.save({foo: "bar"}).then(function(object) {
+	  alert("yay! it worked");
+	});
 }
+
+function save() {
+	var t = ($('#title').val()).toCamelCase();
+	var Reform = Parse.Object.extend("Reform");
+	var t = new Reform();
+
+	t.set('title',			 $('#title').val());
+	t.set('school',			 $('#school').val());
+    t.set('thesis',			 $('#thesis').val());
+    t.set('probDetail',		 $('#probDetail').val());
+    t.set('probSupp',		 $('#probSupp').val());
+    t.set('counter',		 $('#counter').val());
+    t.set('solutDetail',	 $('#solutDetail').val());
+    t.set('solutSupp',		 $('#solutSupp').val());
+    t.set('solutAlt',		 $('#solutAlt').val());
+    t.set('testimonials',	 $('#testimonials').val());
+    t.set('probSolutDetail', $('#probSolutDetail').val());
+    
+    /*titleName*/.save();
+}
+
+String.prototype.toCamelCase = function() {
+      return this
+          .replace(/\s(.)/g, function($1) { return $1.toUpperCase(); })
+          .replace(/\s/g, '')
+          .replace(/^(.)/, function($1) { return $1.toLowerCase(); });
+};
