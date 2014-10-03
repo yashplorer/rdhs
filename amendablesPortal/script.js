@@ -12,18 +12,15 @@ function onLoad() {
 		"width": formWidth + 'px',
 		"height": formHeight - 70 + 'px'
 	});
-	Parse.initialize("QyD6gU9ea2bFczMYlbyZ0Lu4imllLAyldZVQB5H4", "rUvsYvxZuyD9Kf6m3bHSuh6fVlpVvgEOibXhsbzn");
-	var TestObject = Parse.Object.extend("TestObject");
-	var testObject = new TestObject();
-	testObject.save({foo: "bar"}).then(function(object) {
-	  alert("yay! it worked");
-	});
+	Parse.initialize("QyD6gU9ea2bFczMYlbyZ0Lu4imllLAyldZVQB5H4",
+		"rUvsYvxZuyD9Kf6m3bHSuh6fVlpVvgEOibXhsbzn"
+	);
 }
 
 function save() {
 	var t = ($('#title').val()).toCamelCase();
-	var Reform = Parse.Object.extend("Reform");
-	var t = new Reform();
+	var AmendablesPortal = Parse.Object.extend("AmendablesPortal");
+	var t = new AmendablesPortal();
 
 	t.set('title',			 $('#title').val());
 	t.set('school',			 $('#school').val());
