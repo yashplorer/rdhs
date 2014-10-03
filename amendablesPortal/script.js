@@ -37,7 +37,7 @@ function save() {
     t.set('testimonials',	 $('#testimonials').val());
     t.set('probSolutDetail', $('#probSolutDetail').val());
     
-    /*titleName*/.save();
+    t.save();
 }
 
 String.prototype.toCamelCase = function() {
