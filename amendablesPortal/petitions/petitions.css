@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Didot';
+    src: url(Didot.ttc);
+}
+@font-face {
+    font-family: 'Baskerville';
+    src: url(Baskerville.ttc);
+}
+*, option {
+	color: black;
+	font-family: 'Baskerville';
+}
+body{
+	background: url(bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+#wrapper{
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	padding: 15px;
+	background: rgba(255, 255, 255, .9);
+}
+h1 {
+	font-family: 'Didot', 'Baskerville', serif;
+	font-size: 18pt;
+}
+h2 {
+	font-family: 'Didot', 'Baskerville', serif;
+	font-style: oblique;
+	font-size: 14pt;
+}
+p {
+	font-family: 'Baskerville', serif;
+	font-size: 12pt;
+}
+@media screen and (max-width: 509px) {
+	body {
+		padding-left: 15px;
+	}
+}
