@@ -143,6 +143,15 @@ a.nontext /* used to override default properties of 'a' tag */
 	padding: 0px;
 }
 
+.Paragraph-Style
+{
+	color: #FFFFFF;
+	font-family: quicksand, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 15px 15px 0px;
+}
+
 .TabbedPanelsTab
 {
 	white-space: nowrap;
