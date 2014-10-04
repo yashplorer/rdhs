@@ -15,10 +15,11 @@ function onLoad() {
 	Parse.initialize("QyD6gU9ea2bFczMYlbyZ0Lu4imllLAyldZVQB5H4",
 		"rUvsYvxZuyD9Kf6m3bHSuh6fVlpVvgEOibXhsbzn"
 	);
+	//alert("Please note: the website currently saves your data but will not return it back to you. We're working tirelessly to implement further.");
 }
 
 function save() {
-	var t = ($('#title').val()).toCamelCase();
+	//var t = ($('#title').val()).toCamelCase();
 	var AmendablesPortal = Parse.Object.extend("AmendablesPortal");
 	var t = new AmendablesPortal();
 
