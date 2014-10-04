@@ -36,7 +36,7 @@ function save() {
     t.set('probSolutDetail', $('#probSolutDetail').val());
     
     t.save();
-    window.location = "http://rdhs.yashplorer.com/petitions/";
+    window.location = "http://rdhs.yashplorer.com/amendablesPortal/petitions/";
 }
 
 String.prototype.toCamelCase = function() {
