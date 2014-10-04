@@ -36,6 +36,7 @@ function save() {
     t.set('probSolutDetail', $('#probSolutDetail').val());
     
     t.save();
+    window.location = "http://rdhs.yashplorer.com/petitions/";
 }
 
 String.prototype.toCamelCase = function() {
