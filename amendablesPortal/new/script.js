@@ -15,7 +15,8 @@ function onLoad() {
 	Parse.initialize("QyD6gU9ea2bFczMYlbyZ0Lu4imllLAyldZVQB5H4",
 		"rUvsYvxZuyD9Kf6m3bHSuh6fVlpVvgEOibXhsbzn"
 	);
-	//alert("Please note: the website currently saves your data but will not return it back to you. We're working tirelessly to implement further.");
+	//alert("Please note: the website currently saves your data but will not return it back to you.
+	// 		 We're working tirelessly to implement further.");
 }
 
 function save() {

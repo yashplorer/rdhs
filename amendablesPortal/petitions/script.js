@@ -35,7 +35,19 @@ function find(){
 
 	query.get(objId , {
 	  success: function(petition) {
-	    var elementIds = ["title", "school", "thesis", "probDetail", "probSupp", "counter", "solutDetail", "solutSupp", "solutAlt", "testimonials", "probSolutDetail"];
+	    var elementIds = [
+	    	"title",
+	    	"school",
+	    	"thesis",
+	    	"probDetail",
+	    	"probSupp",
+	    	"counter",
+	    	"solutDetail",
+	    	"solutSupp",
+	    	"solutAlt",
+	    	"testimonials",
+	    	"probSolutDetail"
+    	];
 	    var elements = [], i = 0;
 	    while(i < elementIds.length){
 	    	elements[i] = petition.get(elementIds[i]);
